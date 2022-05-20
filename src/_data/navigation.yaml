@@ -1,10 +1,9 @@
----
 items:
-  - text: Menu One
-    url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
+  - text: News Aggregator
+    url: https://news.jace.pro
+  - text: News with Me
+    url: https://www.youtube.com/watch?v=WaOWQ-GItq8&list=PLiMstOldZgCdp0k1UmBWVzdAudFEC7IPD
+  - text: Resume
+    url: https://jace.pro/resume
   - text: Blog
-    url: "/blog"
+    url: /blog
