@@ -12,30 +12,41 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Pages"
+  - label: "Pages and Partials"
+    editor:
+      preview: false
     name: "pages"
     files:
       - label: "Home"
         name: "home"
-        file: "src/index.html"
+        file: "src/_includes/partials/content.html"
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Body, name: body, widget: "markdown" }
-  - label: "Blog"
-    name: "blog"
+          - { label: Body, name: body, widget: "markdown", modes: ["raw"] }
+      - label: "Navbar"
+        name: "navbar"
+        file: "src/_includes/partials/navbar.html"
+        fields:
+          - { label: Body, name: body, widget: "markdown", modes: ["raw"]}
+      - label: "Footer"
+        name: "footer"
+        file: "src/_includes/partials/footer.html"
+        fields:
+          - { label: Body, name: body, widget: "markdown", modes: ["raw"] }
+  - label: "Post"
+    name: "post"
     folder: "src/post"
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string", default: "Jace " }
-      - { label: "Image", name: "image", widget: "file" }
-      - { label: "Image Alt Text", name: "imageAltText", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Has code snippet", name: "prism", widget: "boolean", default: false}
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Title",            name: "title",        widget: "string" }
+      - { label: "Description",      name: "description",  widget: "string" }
+      - { label: "Author",           name: "author",       widget: "string"}
+      - { label: "Image",            name: "image",        widget: "file" }
+      - { label: "Image Alt Text",   name: "imageAltText", widget: "string" }
+      - { label: "Publish Date",     name: "date",         widget: "datetime" }
+      - { label: "Has code snippet", name: "prism",        widget: "boolean", default: false, required: false}
+      - { label: "Body",             name: "body",         widget: "markdown" }
       - widget: select
         label: "tags"
         name: "tags"
@@ -45,7 +56,7 @@ collections:
   - label: "Settings"
     name: "settings"
     editor:
-      preview: false
+      preview: true
     files:
       - label: "Navigation"
         name: "items"

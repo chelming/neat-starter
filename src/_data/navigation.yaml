@@ -1,9 +1,9 @@
 items:
-  - text: News Aggregator
-    url: https://news.jace.pro
-  - text: News with Me
-    url: https://www.youtube.com/watch?v=WaOWQ-GItq8&list=PLiMstOldZgCdp0k1UmBWVzdAudFEC7IPD
-  - text: Resume
-    url: https://jace.pro/resume
+  - text: Menu 1
+    url: https://example.com/#menu1
+  - text: Menu 2
+    url: https://example.com/#menu2
+  - text: Menu 3
+    url: https://example.com/#menu3
   - text: Blog
     url: /blog
