@@ -12,6 +12,15 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "src/index.html"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: "markdown" }
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
@@ -21,7 +30,9 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", default: "Jace " }
+      - { label: "Image", name: "image", widget: "string" }
+      - { label: "Image Alt Text", name: "imageAltText", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
@@ -29,7 +40,7 @@ collections:
         name: "tags"
         multiple: true
         create: true
-        options: ["Tags", "created", "from", "config.yml"]
+        options: ["hello"]
   - label: "Settings"
     name: "settings"
     editor:
@@ -66,3 +77,4 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: Author, name: author, widget: string }
           - { label: URL, name: url, widget: string }
+          - { label: Repo URL, name: repo_url, widget: string }

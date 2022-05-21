@@ -1,21 +1,54 @@
----
-layout: default
-prism: true
----
+{% extends "default.njk" %}
+{%- block seo -%}
+<!--Twitter Card-->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{site.twitter}}">
+<meta name="twitter:creator" content="@{{site.twitter}}">
+<meta name="twitter:url" content="{{site.baseURL}}{{page.url}}">
+<meta name="twitter:title" content="{{title}}">
+{% if summary %}
+<meta name="twitter:description" content="{{summary | striptags | truncate(196) }}">
+{% else %}
+<meta name="twitter:description" content="{{content | striptags | truncate(196) }}">
+{% endif %}
+<meta name="twitter:image" content="{{settings.url}}/static/img{{image}}">
+    {% if imageAltText %}
+    <meta name="twitter:image:alt" content="{{ imageAltText }}">
+    {% endif %}
 
+
+<!--Schema-->
+<!--<link rel="author" href="{{site.baseURL}}">-->
+<!--<link rel="publisher" href="{{site.baseURL}}">-->
+<meta itemprop="name" content="{{title}}">
+
+<meta itemprop="description" content="{{content | striptags | truncate(196) }}">
+<meta itemprop="image" content="{{settings.url}}/static/img{{image}}">
+
+<!-- Facebook OpenGraph -->
+<!--<meta property="fb:app_id" content="{{site.FB_APP_ID}}">-->
+<meta property="og:url" content="{{site.baseURL}}{{page.url}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{title}}">
+<meta property="og:image" content="{{settings.url}}/static/img{{image}}">
+{% if summary %}
+<meta property="og:description" content="{{summary | striptags | truncate(196) }}">{% else %}
+<meta property="og:description" content="{{content | striptags | truncate(196) }}">
+{% endif %}
+<meta property="og:site_name" content="{{settings.name}}">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="{{author}}">
+{%- endblock -%}
+{%- block content -%}
 <div class="container max-w-4xl mt-6  px-6">
     <div class="pb-5 mb-5 border-b border-gray-100">
         <h1 class="font-bold text-5xl">{{title}}</h1>
         <p class="text-center text-base leading-6 font-medium text-gray-500">
-            <time> {{ date | readableDate }}
-                by
-                <a>{{ author }}</a>
-
-            </time>
+            <time> {{ date | readableDate }} by {{ author }} </time>
         </p>
-
     </div>
     <article class="prose lg:prose-xl my-4 mx-auto">
-        {{ content | safe }}</article>
-
+        {{ content | safe }}
+    </article>
 </div>
+{%- endblock -%}
