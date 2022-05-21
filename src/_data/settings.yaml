@@ -1,7 +1,7 @@
 name: Jace's Neat Starter
 author: Jace Benson
 description: This is a demo description for the site
-url: http://localhost:8080
+url: https://astonishing-mousse-c43f37.netlify.app/
 repo_url: https://github.com/jacebenson/something
 twitter: jacebenson
 icon: /assets/something.png
