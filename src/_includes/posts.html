@@ -2,9 +2,9 @@
 {%- block seo -%}
 <!--Twitter Card-->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@{{site.twitter}}">
-<meta name="twitter:creator" content="@{{site.twitter}}">
-<meta name="twitter:url" content="{{site.baseURL}}{{page.url}}">
+<meta name="twitter:site" content="@{{settings.twitter}}">
+<meta name="twitter:creator" content="@{{settings.twitter}}">
+<meta name="twitter:url" content="{{settings.url}}{{page.url}}">
 <meta name="twitter:title" content="{{title}}">
 {% if summary %}
 <meta name="twitter:description" content="{{summary | striptags | truncate(196) }}">
@@ -27,7 +27,7 @@
 
 <!-- Facebook OpenGraph -->
 <!--<meta property="fb:app_id" content="{{site.FB_APP_ID}}">-->
-<meta property="og:url" content="{{site.baseURL}}{{page.url}}">
+<meta property="og:url" content="{{settings.url}}{{page.url}}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{title}}">
 <meta property="og:image" content="{{settings.url}}/static/img{{image}}">
