@@ -1,14 +1,13 @@
----
 links:
-  - title: Netlify CMS
-    url: "https://www.netlifycms.org/"
-    desc: Open source content management for your Git workflow
-  - title: Eleventy
-    url: "https://www.11ty.dev/"
-    desc: Eleventy is a simpler static site generator.
-  - title: Alpine.js
-    url: "https://github.com/alpinejs/alpine"
-    desc: A minimal framework for composing JavaScript behavior in your markup.
-  - title: Tailwind CSS
-    url: "https://tailwindcss.com/"
-    desc: A utility-first CSS framework for rapidly building custom designs.
+  - title: News with Jace
+    url: https://m.youtube.com/watch?v=WaOWQ-GItq8&list=PLiMstOldZgCdp0k1UmBWVzdAudFEC7IPD
+    desc: ServiceNow News with me every week on Monday in 5 minutes or less.
+  - title: news.jace.pro
+    url: https://news.jace.pro
+    desc: ServiceNow news on the hour every hour
+  - title: Discord
+    url: https://discord.gg/y43VtUX
+    desc: Join me on Discord
+  - title: LinkedIn
+    url: https://linkedin.com/in/jacebenson
+    desc: Follow me on LinkedIn

@@ -1,8 +1,8 @@
-name: Jace's Neat Starter
-author: Jace Benson
-authorUrl: "https://jace.pro"
-url: https://astonishing-mousse-c43f37.netlify.app
-repo_url: https://github.com/jacebenson/something
-description: This is a demo description for the site
-twitter: jacebenson
-icon: /static/img/screenshot-2022-03-03-174427.png
+name: Neat Starter with RSS and SEO
+author: You should be here
+authorUrl: https://example.com/#a-site-about-you-should-be-here
+url: https://neat-starter-rss-seo.netlify.app
+repo_url: https://github.com/jacebenson/neat-starter
+description: A 11ty starter using netlifyCMS
+twitter: yourtwitterhandleshouldbehere
+icon: /static/img/apple-touch-icon.png

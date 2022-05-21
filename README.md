@@ -1,10 +1,15 @@
 # Neat Starter
 
-Starter Template for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind CSS
+This was derived from the [Neat Starter](https://neat-starter.netlify.app/).  This is different in that it has the following;
+
+- RSS
+- SEO Data for Twitter, OG, and Google.
+- Settings are all in config.yaml for NetlifyCMS
+- Homepage is in the settings for NetlifyCMS
 
 ## Live Demo
 
-[https://neat-starter.netlify.app/](https://neat-starter.netlify.app/)
+[https://neat-starter-rss-seo.netlify.app](https://neat-starter-rss-seo.netlify.app)
 
 ### Technologies used:
 
