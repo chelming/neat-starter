@@ -38,6 +38,34 @@
 <meta property="og:site_name" content="{{settings.name}}">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="{{author}}">
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{settings.url}}{{page.url}}"
+      },
+      "headline": "{{title}}",
+      "image": [
+        "{{settings.url}}{{image}}"
+      ],
+      "datePublished": "{{date}}",
+      "dateModified": "{{date}}",
+      "author": {
+        "@type": "Person",
+        "name": "{{author}}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{settings.name}}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{settings.icon}}"
+        }
+      }
+    }
+</script>
 {%- endblock -%}
 {%- block content -%}
 <div class="container max-w-4xl mt-6  px-6">
