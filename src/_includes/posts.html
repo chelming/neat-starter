@@ -43,6 +43,11 @@
 <div class="container max-w-4xl mt-6  px-6">
     <div class="pb-5 mb-5 border-b border-gray-100">
         <h1 class="font-bold text-5xl">{{title}}</h1>
+        <div class="flex items-center">
+            <div class="flex-shrink-0">
+                <img class="h-12 w-12 rounded-full" src="{{settings.url}}{{image}}" alt="{{imageAltText}}">
+            </div>
+        </div>    
         <p class="text-center text-base leading-6 font-medium text-gray-500">
             <time> {{ date | readableDate }} by {{ author }} </time>
         </p>

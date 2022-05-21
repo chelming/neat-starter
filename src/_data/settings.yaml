@@ -1,7 +1,7 @@
 name: Jace's Neat Starter
 author: Jace Benson
 description: This is a demo description for the site
-url: https://jace.pro
+url: http://localhost:8080
 repo_url: https://github.com/jacebenson/something
 twitter: jacebenson
 icon: /assets/something.png
