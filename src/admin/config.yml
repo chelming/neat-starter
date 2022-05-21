@@ -23,7 +23,7 @@ collections:
           - { label: Body, name: body, widget: "markdown" }
   - label: "Blog"
     name: "blog"
-    folder: "src/posts"
+    folder: "src/post"
     create: true
     editor:
       preview: false

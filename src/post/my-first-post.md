@@ -1,9 +1,11 @@
 ---
-title: This is my first post
+title: This is my first post - update
 description: Capitalize on low hanging fruit to identify a ballpark value added
   activity to beta test. Override the digital divide with additional
   clickthroughs from DevOps.
 author: Surjith S M
+image: /static/img/1-problem-solving.jpg
+imageAltText: Solving a rubrics cube
 date: 2020-09-01
 tags:
   - left
