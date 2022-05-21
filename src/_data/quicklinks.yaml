@@ -1,13 +1,13 @@
 links:
-  - title: NetlifyCMS
-    url: https://www.netlifycms.org/
-    desc: Open source content management for your Git workflow
+  - title: Getting started
+    url: /post/getting-started/
+    desc: Setting up this starter is one blog post away
   - title: Original NEAT Starter
     url: https://neat-starter.netlify.app/
     desc: Starter Template for Netlify CMS, Eleventy, Alpine JS & Tailwind CSS
   - title: Discord
     url: https://discord.gg/jamstack
     desc: The Jamstack Discord
-  - title: NetlifyCMS Community
-    url: https://www.netlifycms.org/community/
-    desc: Help us build the CMS of the future
+  - title: NetlifyCMS
+    url: https://www.netlifycms.org/
+    desc: Open source content management for your Git workflow
